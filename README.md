@@ -1,4 +1,4 @@
-# schema-lite-child
+# schema-lite-child - v0.0.1 (pre-release yet, will keep improving)
 
 child theme for schema lite to fix errors and issues, with same design
 
