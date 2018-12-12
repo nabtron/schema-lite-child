@@ -1,0 +1,253 @@
+/*
+ Theme Name:   Schema Lite Child
+ Theme URI:    https://nabtron.com/
+ Description:  Schema lite child theme
+ Author:       nabtron
+ Author URI:   https://nabtron.com
+ Template:     schema-lite
+ Version:      0.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         schema lite child
+ Text Domain:  schema-lite-child
+*/
+
+/* the id="navigation" fix, by changing first one to "navigation-top" */
+
+
+.top-navigation #navigation-top {
+	float: right;
+}
+.top-navigation #navigation-top ul li a {
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 13px;
+	color: #777;
+	padding: 17px 15px 16px 15px;
+}
+.top-navigation #navigation-top .menu-item-has-children > a {
+	padding-right: 25px;
+}
+#navigation-top ul { list-style-type: none }
+#navigation-top a {
+	text-align: left;
+	text-decoration: none;
+	padding: 25px;
+	-webkit-transition: none;
+	transition: none;
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+}
+#navigation-top .sf-sub-indicator {
+	display: block;
+	width: 11px;
+	overflow: hidden;
+	position: absolute;
+	right: 7px;
+	top: 0;
+}
+#navigation-top select { display: none }
+#navigation-top ul li {
+	float: left;
+	position: relative;
+}
+#navigation-top ul li.current-menu-item a {
+	background: #fff;
+}
+#navigation-top ul .header-search { float: right }
+#navigation-top > ul > li:last-child { border-right: none }
+#navigation-top > ul > .current a {
+	background: transparent;
+	color: #5a5a5a !important;
+}
+#navigation-top ul li li {
+	background: #fff;
+	width: 100%;
+}
+#navigation-top ul ul {
+	margin: 0;
+	display: none;
+	position: absolute;
+	width: 255px;
+	padding: 20px 0 0 0;
+	padding-top: 0;
+	z-index: 400;
+	font-size: 12px;
+	color: #798189;
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.2);
+	box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.2);
+}
+#navigation-top ul ul a {
+	color: #777;
+}
+#navigation-top ul ul li {
+	padding: 0;
+	background: #fff;
+}
+#navigation-top ul ul li a, #navigation-top ul ul li a:link, #navigation-top ul ul li a:visited {
+	position: relative;
+	width: 100%;
+	background: transparent;
+	margin: 0;
+	line-height: 1.4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#navigation-top ul ul li:last-child { border-bottom: none }
+#navigation-top ul ul ul {
+	top: 0px;
+	left: 255px;
+}
+#navigation-top li:hover ul, #navigation-top li li:hover ul, #navigation-top li li li:hover ul, #navigation-top li li li li:hover ul {
+	opacity: 1;
+}
+#navigation-top ul ul:after {
+	left: 10px;
+	top: -5px;
+}
+#navigation-top ul ul ul:after {
+	border-color: transparent #282E33 transparent transparent;
+	border-color: transparent rgba(14,19,22,0.92) transparent transparent;
+	left: -12px;
+	top: 3px;
+}
+#navigation-top .menu-item-has-children > a {
+	padding-right: 38px;
+}
+#navigation-top .toggle-caret { display: none }
+
+@media screen and (max-width: 865px) {
+	#navigation-top {
+		width: 100%;
+		border: none;
+		display: none;
+	}
+    #navigation-top .menu a, #navigation-top .menu .fa > a, #navigation-top .menu .fa > a {
+		background: rgba(0, 0, 0, 0)!important;
+		margin-left: 0;
+	}
+	#navigation-top .menu {
+		display: block!important;
+		background: transparent;
+	}
+	#navigation-top ul ul {
+		visibility: visible!important;
+		opacity: 1!important;
+		position: relative;
+		left: 0!important;
+		border: 0;
+		width: 100%;
+	}
+	#navigation-top ul li li {
+		background: transparent;
+		border: 0;
+	}
+	#navigation-top { height: auto }
+	#navigation-top li, #navigation-top ul li li {
+		width: 100%!important;
+		float: left;
+		position: relative;
+	}
+	#navigation-top ul li:after { display: none }
+	#navigation-top ul li:before { display: none }
+	#navigation-top li a {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15)!important;
+		width: 100%!important;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#navigation-top a {
+		text-align: left;
+		width: 100%;
+	}
+	#navigation-top a .sub { display: none }
+    #navigation-top ul .sfHover a, #navigation-top ul li:hover, #navigation-top ul .sfHover ul li { background: transparent }
+	#navigation-top.mobile-menu-wrapper {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -300px;
+		width: 300px;
+		z-index: 9999;
+		height: 100%;
+		border-right: 1px solid rgba(0, 0, 0, 0.15);
+		overflow: auto;
+		-webkit-transition: left 500ms ease;
+		transition: left 500ms ease;
+		-webkit-backface-visibility: hidden;
+		background: #1D2933;
+	}
+    .mobile-menu-active #navigation-top.mobile-menu-wrapper { left: 0 }
+	#navigation-top ul li { width: 100% }
+	#navigation-top ul li:hover { background: none }
+	#navigation-top ul li a, #navigation-top ul ul a {
+		padding: 10px 20px;
+		width: 100%;
+		border: none;
+		min-height: auto;
+		border-right: 0;
+	}
+	#navigation-top ul ul {
+		position: static;
+		width: 100%;
+		border: none;
+		background: none;
+		float: left;
+		display: none;
+	}
+	#navigation-top ul ul li {
+		background: none;
+		width: 100%;
+		padding: 0;
+	}
+	#navigation-top > ul li:first-child a { border-left: none!important }
+	.primary-navigation .menu .current-menu-item > a:after { background: none }
+	#navigation-top ul ul li:hover { background: none }
+	#navigation-top i { display: inline }
+	#navigation-top ul ul a {
+		padding: 0 20px;
+		width: 100%!important;
+	}
+    #navigation-top .toggle-caret {
+		display: block;
+		width: 44px;
+		height: 44px;
+		line-height: 44px;
+		color: #ffffff;
+		border-left: 1px solid rgba(255, 255, 255, 0.15);
+	}
+
+	#navigation-top ul ul a { font-weight: 600 }
+}
+
+/* fixing the error of repeated featured thumbnail id on the homepage */
+
+.featured-thumbnail-id {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.related-posts .featured-thumbnail-id { margin-right: 0; }
+.related-posts .featured-thumbnail-id .featured-thumbnail { max-width: 100% }
+@media screen and (max-width: 550px) {
+	.related-posts .featured-thumbnail-id { max-width: 100% }
+}
+
+/* fixing duplicate respond id */
+
+#respond-inner h3 {
+	margin-top: 18px;
+	font-size: 18px;
+	margin: 15px 0 0 0;
+	padding: 0 0 20px 0;
+}
+#respond-inner h3:empty { display: none; }
+.related-posts h3, h4.total-comments, #respond-inner h4 {
+	font-size: 30px;
+	font-weight: normal;
+}
+.woocommerce #respond input#submit, .woocommerce-page #respond input#submit { background-color: #0274be; }
